@@ -9,10 +9,16 @@ export default function TodoForm() {
         setTodo(e.target.value);
     };
 
+    // add todo to todoList
     const handleAddTodo = () => {
         setTodoList((prevTodoList) => [...prevTodoList, todo]);
         setTodo("");
     };
+
+    // remove todo from todoList
+    const handleRemoveTodo = (todo) => {
+        setTodoList((prevTodoList) => prevTodoList.filter((item) => item !== todo));
+    }
 
     return (
         <div className={styles.maincontainer}>
@@ -26,10 +32,16 @@ export default function TodoForm() {
                 />
             <button type="submit" className={styles.add} onClick={handleAddTodo}>Add</button>
             <ol>
-                    {todoList.map((item) => (
-                        <li key={item}>{item}</li>
-                    ))}
-                </ol>
+                {todoList.map((item) => (
+                    <li key={item}>{item} <button
+                    type="button"
+                    className={styles.remove}
+                    onClick={() => handleRemoveTodo(item)}
+                    >Remove</button>
+                </li>
+                ))}
+            </ol>
+           
         </div>
     );
 }
