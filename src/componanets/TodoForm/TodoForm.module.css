@@ -1,0 +1,32 @@
+.maincontainer{
+    height: 28rem;
+    width: 24rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+}
+
+.container{
+    text-align: center;
+    padding: 2rem;
+}
+
+.heading{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.addInput{
+    width: 60%;
+    height: 1.7rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    padding: 0 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.add{
+ height:1.4rem;
+ width: 3rem;
+ margin-left:0.5rem;
+}
