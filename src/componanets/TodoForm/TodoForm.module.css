@@ -23,13 +23,15 @@
 }
 
 .add{
- height:1.4rem;
- width: 3rem;
- margin-left:0.5rem;
+    height:1.4rem;
+    width: 3rem;
+    margin-left:0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease
 }
 
 .add:hover{
-    cursor: pointer;
+    background-color: #773131;
 }
 
 .remove{
@@ -37,4 +39,10 @@
     width: 3.7rem;
     margin-left: 1rem; 
     margin-top: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease
+}
+
+.remove:hover{
+    background-color: #ba0909;
 }

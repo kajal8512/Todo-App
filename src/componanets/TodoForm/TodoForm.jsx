@@ -4,7 +4,7 @@ import styles from "./TodoForm.module.css";
 export default function TodoForm() {
     const [todo, setTodo] = useState('');
     const [todoList, setTodoList] = useState([]);
-    const [editTodo, setEditTodo] = useState(true);
+    const [editTodo, setEditTodo] = useState(null);
 
     const handleTodoChange = (e) => {
         setTodo(e.target.value);
@@ -35,6 +35,7 @@ export default function TodoForm() {
     const handleEditTodo = (todo) => {
         setEditTodo(todo);
         setTodo(todo);
+        // setEditTodo(false)
     }
 
     return (
